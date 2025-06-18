@@ -21,3 +21,4 @@ The transitions are an emergent property of the specific computational framework
 
 ## Notes
 - Unclear initialization of K-values for gen 0. 
+- 1.0 and 2.0 versions of the sa_ot algorithm run the same way given same seed.
