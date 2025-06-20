@@ -174,7 +174,6 @@ K_VALUES_RANDOM = sorted([4.9] + [random.uniform(-0.1, 4.9) for _ in range(3)], 
 
 
 # ----- Simulated Annealing Algorithm -----
-# ----- Simulated Annealing Algorithm -----
 def sa_ot(initial_sf, grammar, 
           K_max=5, K_step=1, t_max=3, t_min=0, t_step=1, max_no_moves=50,
           seed=None, verbose=False):
@@ -354,7 +353,7 @@ class SAOTAgent:
                                                         for the constraints in the order of the specified hierarchy 
                                                         (only the Faith[Neg] constraint is always initialized with a K-value of 4.9).
         - an SA-OT production procedure (performance): The agent can produce surface forms based on its grammar.
-        - a GLA learning procedure (Boersma, 1997): The agent can update its grammat based on observed surface forms. 
+        - a GLA learning procedure (Boersma, 1997): The agent can update its grammar based on observed surface forms. 
         
         Args:
             id (int): Unique identifier for the agent.
@@ -415,7 +414,7 @@ class SAOTAgent:
         init_k_values = self.k_values.copy()
         grammar = {constraint: k for constraint, k in 
                         zip(self.HIERARCHIES_DICT[self.initial_hierarchy_name], init_k_values)}
-        return grammar
+        return grammar 
 
     def grammar_dict_to_readable(self, grammar_dict):
         """Convert dict with function keys to dict with function name keys for display."""
