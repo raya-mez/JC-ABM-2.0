@@ -490,7 +490,7 @@ class SAOTModel:
     def init_pop(self):
         """Initialize a population of agents with specified initial hierarchy."""  
         for i in range(-self.pop_size, 0):
-            agent = Agent(i, hierarchy_name=self.gen0_hierarchy_name, k_values=self.gen0_k_values) 
+            agent = SAOTAgent(i, hierarchy_name=self.gen0_hierarchy_name, k_values=self.gen0_k_values) 
             self.agents.append(agent)
     
     def step(self):
@@ -508,7 +508,7 @@ class SAOTModel:
         id_start = (self.current_gen-1) * len(self.agents) + 1
         for id in range(id_start, id_start + self.pop_size):
             hierarchy_name = random.choice(self.HIERARCHY_NAMES) # Randomly select a hierarchy for the new agent
-            agent = Agent(id, hierarchy_name=hierarchy_name, k_values=self.k_values) 
+            agent = SAOTAgent(id, hierarchy_name=hierarchy_name, k_values=self.k_values) 
             new_agents.append(agent)
         
         # Store initial hierarchies for this generation
