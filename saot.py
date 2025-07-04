@@ -456,9 +456,9 @@ class SAOTAgent:
 
 # ----- Model class -----
 class SAOTModel:
-    def __init__(self, pop_size=5, generations=100, 
+    def __init__(self, pop_size=5, generations=100, seed=42, 
                  gen0_hierarchy_name='H1', gen0_k_values='default',
-                 k_values='random', gla_plasticity=0.1, seed=42,
+                 k_values='random', gla_plasticity=0.1,
                  learning_data_size=30, productions_per_agent=100):
 
         self.seed = seed
