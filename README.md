@@ -7,6 +7,8 @@ Thus, the project aimed to:
 - explore the different characteristics and parameters of the model;
 - improve the model to account for the entire progression of JC, not only the first transition (from preverbal to discontinuous negation).
 
+Although it did not succeed at providing a full computational account of JC, it presents important insights for its formalization. 
+
 # Requirements
 ```bash
 pip install numpy pandas matplotlib seaborn
@@ -18,19 +20,11 @@ pip install numpy pandas matplotlib seaborn
 - `exp1-jc_stages.ipynb` shows how SAOT models the different stages of JC.
 - `exp3-jc_transitions.ipynb` contains an agent-based model using iterated learning to simulate the gradual transition from one pure stage of JC to the next.  
 - `exp2-convergence_test.ipynb` shows the impact of the initial grammar of agents on their learning patterns.
-
+- `SAOT-2.0.ipynb` walks through the entire project, including the model setun and the different experiments. 
+- `bayesian.ipynb` contains a sketch of an alternative Bayesian model.
 
 # References
 - Lopopolo, A., & Biro, T. (2011). Language Change and SA-OT: The case of sentential negation. Computational Linguistics in the Nether-
 lands Journal. doi: 10.7282/T3BC3WKH.
 - Biró, T. (2010), OTKit: Tools for Optimality Theory. A software package. http://www.birot.hu/OTKit/.
 - Swart, H. de (2010), Expression and Interpretation of Negation: An OT Typology, Vol. 77 of Studies in Natural Language and Linguistic Theory, Springer, Dordrecht, etc., chapter 3: Markedness of Negation.
-
-
-<!-- # References for Modeling Decisions
-| Component                     | Source / Rationale                                                          |
-| ----------------------------- | --------------------------------------------------------------------------- |
-| Constraint-based grammars     | Optimality Theory (Prince & Smolensky 1993; de Swart 2009)                  |
-| Iterated learning framework   | Kirby et al. (2007), Griffiths & Kalish (2005)                              |
-| Constraint weights = K-values | Lopopolo & Biró (2011); this encodes hierarchy strength quantitatively      |
-| Candidate space (\[NV], etc.) | de Swart (2009), Lopopolo & Biró (2011)                                     | -->
